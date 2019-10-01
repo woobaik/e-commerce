@@ -1,3 +1,6 @@
-.home-container {
+.home {
   background-color: blue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
