@@ -1,10 +1,11 @@
-import React, { Component } from "react";
-import "./Home.styles.scss";
-import CardItem from "../../components/CardItem.component";
+import React, { Component } from "react"
+import "./Home.styles.scss"
+import CardItem from "../../components/card/CardItem.component"
 
 class Home extends Component {
   constructor() {
-    super();
+    super()
+
     this.state = {
       cardItems: [
         {
@@ -28,19 +29,19 @@ class Home extends Component {
           image_url: "https://via.placeholder.com/150/92c952"
         }
       ]
-    };
+    }
   }
   render() {
     return (
       <div className='home'>
-        <CardItem className='card-item' />
-        <CardItem className='card-item' />
-        <CardItem className='card-item' />
-        <CardItem className='card-item' />
-        <CardItem className='card-item' />
+        {this.state.cardItems.map(({ category, image_url }) => {
+          return (
+            <CardItem category={category} img='{image_url}' key='{category}' />
+          )
+        })}
       </div>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home
