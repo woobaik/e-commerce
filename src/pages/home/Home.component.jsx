@@ -10,23 +10,30 @@ class Home extends Component {
       cardItems: [
         {
           category: "hat",
-          image_url: "https://via.placeholder.com/150/92c952"
+          image_url: "https://www.fillmurray.com/g/200/300",
+          id: 1
         },
         {
           category: "shoes",
-          image_url: "https://via.placeholder.com/150/92c952"
+          image_url: "https://www.fillmurray.com/g/200/300",
+          id: 2
         },
         {
           category: "accessary",
-          image_url: "https://via.placeholder.com/150/92c952"
+          image_url: "https://www.fillmurray.com/g/200/300",
+          id: 3
         },
         {
           category: "women",
-          image_url: "https://via.placeholder.com/150/92c952"
+          image_url: "https://www.fillmurray.com/g/200/300",
+          id: 4,
+          classProp: "image-large"
         },
         {
           category: "men",
-          image_url: "https://via.placeholder.com/150/92c952"
+          image_url: "https://www.fillmurray.com/g/200/300",
+          id: 5,
+          classProp: "image-large"
         }
       ]
     }
@@ -34,9 +41,14 @@ class Home extends Component {
   render() {
     return (
       <div className='home'>
-        {this.state.cardItems.map(({ category, image_url }) => {
+        {this.state.cardItems.map(({ category, image_url, id, classProp }) => {
           return (
-            <CardItem category={category} img='{image_url}' key='{category}' />
+            <CardItem
+              category={category}
+              image={image_url}
+              key={id}
+              classProp={classProp}
+            />
           )
         })}
       </div>
