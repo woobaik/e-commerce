@@ -1,4 +1,21 @@
 .Header {
-  background-color: floralwhite;
+  background-color: #333745;
+  color: #eef5db;
   height: 10vh;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .header-logo {
+    width: 40%;
+  }
+  .header-navigations {
+    display: flex;
+    font-size: 1rem;
+
+    div {
+      padding-left: 0.5rem;
+    }
+  }
 }
