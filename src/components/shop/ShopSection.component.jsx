@@ -5,7 +5,7 @@ import ShopItem from "./ShopItem.component"
 function ShopSection({ cardData }) {
   return (
     <div className='shop-section'>
-      <div className='shop-section-title'>{cardData.title}</div>
+      <div className='shop-section-title'>{cardData.title.toUpperCase()}</div>
       <div className='shop-section-image'>
         {cardData.items
           .filter((item, index) => index < 4)
