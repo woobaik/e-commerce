@@ -12,10 +12,10 @@ const Header = () => {
         <Link to='/shop' className='header-navigation'>
           SHOP
         </Link>
-        <Link to='/shop' className='header-navigation'>
+        <Link to='/about' className='header-navigation'>
           ABOUT
         </Link>
-        <Link to='/shop' className='header-navigation'>
+        <Link to='/about' className='header-navigation'>
           SIGN IN
         </Link>
       </div>

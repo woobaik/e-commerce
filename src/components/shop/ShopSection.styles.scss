@@ -5,13 +5,26 @@
   margin: 0rem 0;
 }
 
+.shop-section-category-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .shop-section-title {
   padding: 1rem 2rem;
   color: black;
   font-family: "Playfair Display", serif;
   letter-spacing: 0.5rem;
+  padding-left: 4rem;
+  cursor: pointer;
 }
 
+.shop-section-more {
+  font-size: 1rem;
+  padding-right: 5%;
+  cursor: pointer;
+}
 .shop-section-image {
   // fixxx
   display: flex;
