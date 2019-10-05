@@ -1,17 +1,17 @@
 import React from "react"
 import "./ShopSection.styles.scss"
+import ShopItem from "./ShopItem.component"
 
 function ShopSection({ cardData }) {
-  console.log(cardData)
   return (
     <div className='shop-section'>
       <div className='shop-section-title'>{cardData.title}</div>
-      <div>
+      <div className='shop-section-image'>
         {cardData.items
-          .filter((data, idx) => idx < 4)
-          .map(item => {
-            return <div key={item.id}>{item.name}</div>
-          })}
+          .filter((item, index) => index < 4)
+          .map(card => (
+            <ShopItem key={card.id} card={card}></ShopItem>
+          ))}
       </div>
     </div>
   )

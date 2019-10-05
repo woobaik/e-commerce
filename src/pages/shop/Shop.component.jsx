@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import SHOP_DATA from "../../shop.data"
 
-import ShopSection from "../../components/shop/ShopSection.conponent"
+import ShopSection from "../../components/shop/ShopSection.component"
 
 class Shop extends Component {
   constructor() {
