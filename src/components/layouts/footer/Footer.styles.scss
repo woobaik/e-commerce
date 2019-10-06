@@ -2,5 +2,21 @@
   background-color: black;
   color: white;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+
+  .footer-link {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: pink;
+    }
+  }
 }
