@@ -12,10 +12,11 @@ class SignIn extends Component {
   }
 
   handleChange = event => {
-    console.log(event.target)
     const { name, value } = event.target
-    console.log(name)
+    this.setState({ [name]: value })
+    console.log(this.state)
   }
+
   render() {
     return (
       <div className='sign-in'>
