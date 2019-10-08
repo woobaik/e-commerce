@@ -1,0 +1,32 @@
+.form-group {
+  width: 40vw;
+  border: solid 1px #ccc;
+  position: relative;
+  padding: 0 8px;
+
+  input {
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    padding: 16px 0 10px;
+    &:focus + label {
+      color: cadetblue;
+      font-size: 8px;
+      top: 8px;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 16px;
+    font-size: 16px;
+    left: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .shrinked {
+    color: cadetblue;
+    font-size: 8px;
+    top: 8px;
+  }
+}

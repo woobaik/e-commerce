@@ -30,6 +30,7 @@ class SignIn extends Component {
             name='email'
             value={this.state.email}
             handleChange={this.handleChange}
+            label='email'
           />
         </form>
       </div>
