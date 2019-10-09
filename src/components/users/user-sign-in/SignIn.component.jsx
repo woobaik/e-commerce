@@ -46,6 +46,7 @@ class SignIn extends Component {
           />
 
           <Button buttonType='sign-in-btn'>Sign In</Button>
+          <Button buttonType='sign-in-google-btn'>Sign In with Google</Button>
         </form>
       </div>
     )

@@ -27,7 +27,7 @@ class SignUp extends Component {
   render() {
     return (
       <div className='sign-up'>
-        <h2 className=''>Already Have An Account? </h2>
+        <h2 className=''>Welcome to Hype Shop </h2>
         <form onSubmit={this.handleSubmit}>
           <FormInput
             type='email'
