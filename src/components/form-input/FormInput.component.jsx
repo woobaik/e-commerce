@@ -9,12 +9,12 @@ class FormInput extends Component {
           className='form-input'
           type={this.props.type}
           name={this.props.name}
-          id={this.props.name}
+          id={this.props.label}
           onChange={this.props.handleChange}
         />
 
         <label
-          htmlFor={this.props.name}
+          htmlFor={this.props.label}
           className={this.props.value ? "shrinked" : ""}
         >
           {this.props.name.toUpperCase()}

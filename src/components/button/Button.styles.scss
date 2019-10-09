@@ -1,0 +1,19 @@
+.button {
+  padding: 0.5rem 1rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+  margin: 2rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-7px);
+  }
+
+  &.sign-in-btn {
+    background-color: #7fdbff;
+  }
+
+  &.sign-up-btn {
+    background-color: #2ecc40;
+  }
+}
